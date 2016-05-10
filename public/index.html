@@ -12,27 +12,27 @@
 </head>
 
 <body>
-    <header>
-        <h1>FREDDY ROBERTS</h1>
-        <nav class="page_nav">
+    <header class="header">
+        <h1 class="title" role="heading">FREDDY ROBERTS</h1>
+        <nav class="navigation" role="navigation">
             <ul>
-                <li><a href="#about" id="aboutLnk">About</a></li>
-                <li><a href="#social" id="socialLnk">Social</a></li>
-                <li><a href="#portfolio" id="portfolioLnk">Portfolio</a></li>
-                <li><a href="#contact" id="contactLnk">Contact</a></li>
+                <li class="nav-items"><a class="links" href="#about" id="aboutLnk">About</a></li>
+                <li class="nav-items"><a class="links" href="#social" id="socialLnk">Social</a></li>
+                <li class="nav-items"><a class="links" href="#portfolio" id="portfolioLnk">Portfolio</a></li>
+                <li class="nav-items"><a class="links" href="#contact" id="contactLnk">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main role="main">
         <section id="top" class="hero"></section>
         <section class="contact" id="contact">
-            <img src="assets/img/freddyorville_footerbg.jpg" />
-            <article>
-                <ul class="desktopContact">
-                    <h2>Contact Me</h2>
-                    <li><i class="fa fa-mobile"><a href="tel:1-615-200-8245">(615) 200 8245</a></i></li>
-                    <li><i class="fa fa-envelope-o"></i><a href="mailto:me@freddyroberts.com">me@freddyroberts.com</a></li>
-                    <li><i class="fa fa-linkedin-square"></i><a href="https://www.linkedin.com/in/freddyroberts">@freddyroberts</a></li>
+            <img class="contact-img" src="assets/img/freddyorville_footerbg.jpg" />
+            <article class="contact-content">
+                <ul class="contact-info">
+                    <h2 class="contact-title">Contact Me</h2>
+                    <li class="contact-items"><i class="fa fa-mobile contact-icons"><a class="links" href="tel:1-615-200-8245">(615) 200 8245</a></i></li>
+                    <li class="contact-items"><i class="fa fa-envelope-o contact-icons"></i><a class="links" href="mailto:me@freddyroberts.com">me@freddyroberts.com</a></li>
+                    <li class="contact-items"><i class="fa fa-linkedin-square contact-icons"></i><a class="links" href="https://www.linkedin.com/in/freddyroberts">@freddyroberts</a></li>
                 </ul>
             </article>
         </section>
@@ -40,58 +40,72 @@
             <ul>
                 <h2>Contact Me</h2>
                 <li>
-                    <a class="fa fa-mobile" href="tel:1-615-200-8245"></a>
+                    <a class="fa fa-mobile links" href="tel:1-615-200-8245"></a>
                 </li>
                 <li>
-                    <a class="fa fa-envelope-o" href="mailto:me@freddyroberts.com"></a>
+                    <a class="fa fa-envelope-o links" href="mailto:me@freddyroberts.com"></a>
                 </li>
                 <li>
-                    <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/freddyroberts"></a>
+                    <a class="fa fa-linkedin-square links" href="https://www.linkedin.com/in/freddyroberts"></a>
                 </li>
             </ul>
         </section>
         <section class="about" id="about">
-            <p id="about_article">
-                I’m Freddy Orville Roberts, from Echo, Alabama. I’ve studied in Sydney, AU prior to living Stockolm, SE for the past five years. I’m back in Music City, USA, recently graduated from an immersive code education course at The Iron Yard. I’m looking to continue
-                my education by obtaining a position as a Junior Front End Developer.
+            <p class="about-info">
+                I’m Freddy Orville Roberts, from Echo, Alabama.
+                I’ve studied in Sydney, AU prior to living Stockholm, SE for the past five years.
+                I’m currently living in Nashville, TN, where I work as a front end developer.
+                I am a graduate of The Iron Yard - Nashville's Front End Engineering program, with a concentration in JavaScript, MVC Frameworks, React.js, and responsive design.
+                I’m looking to continue my education by pursuing opportunities that will allow me to contribute to an organization as a Front End Developer.
+            </p>
         </section>
 
         <section class="social" id="social">
-            <nav class="social_nav">
-                <a href="https://twitter.com/freddyroberts" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @freddyroberts</a>
-            </nav>
             <section id="instafeed" class="insta"></section>
         </section>
 
         <section class="portfolio" id="portfolio">
-            <article>
-                <h2>Skills</h2>
-            </article>
-            <article>
-                <ul>
-                    <li><b>HTML/CSS</b>: Sass, Bourbon/Neat.</li>
+            <div class="portfolio-title">
+              <h2>Skills</h2>
+            </div>
+                <ul class="portfolio-info">
+                    <li><b>HTML/CSS</b>: Sass, Bourbon/Neat, Bootstrap</li>
                     <li><b>JAVASCRIPT</b>: jQuery, Underscore.js, Backbone.js, React.js, Vue.js, and able to learn other MVC Frameworks</li>
                     <li><b>UX/UI</b>: Responsive Web Design</li>
                     <li><b>Versioning/Collaborating</b>: Git, GitHub and Strong foundation with working in team environments</li>
                     <li><b>Laravel</b>: A basic understanding and exposure working in Laravel</li>
                     <li><b>Development Tools</b>: CommandLine/Terminal, Bower, NPM, Gulp, Browserify, BrowerSync, Homestead</li>
                 </ul>
-            </article>
 
-            <nav class="portfolioNav">
-                <h2>Projects I've Worked On</h2>
-                <a href="http://taylorpreston.github.io/Outfit_Maker/#/"><span>A Virtual Wardrobe</span><img src="assets/img/drobe.jpg"/></a>
-                <a href="http://hinsonpoolcare.com"><span>Hinson Pool Care</span><img src="assets/img/hinson-pool-care.jpg"/></a>
-                <a href="http://freddyroberts.github.io/CaddisTest/"><span>Caddis Test</span><img src="assets/img/caddis-test.jpg"/></a>
-                <a href="http://hollymeyers.com"><span>HollyMeyers.com</span><img src="assets/img/hollymeyers.jpg"/></a>
-            </nav>
-            <article>
-                <a href="assets/img/FreddyRobertsResume.pdf" download><i class="fa fa-arrow-circle-o-down">Get My Resume</i></a>
-                <a href="https://github.com/freddyroberts"><i class="fa fa-arrow-circle-o-down">Git To Github</i></a>
-            </article>
+            <div class="projects">
+                <h2 class="projects-title">Projects</h2>
+                <a class="project-item" href="http://taylorpreston.github.io/Outfit_Maker/#/">
+                    <span>A Virtual Wardrobe</span>
+                    <img class="project-img" src="assets/img/drobe.jpg"/>
+                </a>
+                <a class="project-item" href="http://hinsonpoolcare.com">
+                  <span>Hinson Pool Care</span>
+                  <img class="project-img" src="assets/img/hinson-pool-care.jpg"/>
+                </a>
+                <a class="project-item" href="http://freddyroberts.github.io/CaddisTest/">
+                  <span>Caddis Test</span>
+                  <img class="project-img" src="assets/img/caddis-test.jpg"/>
+                </a>
+                <a class="project-item" href="http://hollymeyers.com">
+                  <span>HollyMeyers.com</span>
+                  <img class="project-img" src="assets/img/hollymeyers.jpg"/>
+                </a>
+            </div>
+            <div>
+              <a class="portfolio-links" href="assets/img/FreddyRobertsResume.pdf" download><i class="fa fa-download"></i>Get My Resume</a>
+              <a class="portfolio-links" href="https://github.com/freddyroberts"><i class="fa fa-download"></i>Git To Github</a>
+            </div>
         </section>
-        <footer>
-            <a id="bottom" href="#">Back to Top</a>
+        <footer class="footer">
+            <a class="back-to-top" id="bottom" href="#">
+              Back to Top
+              <i class="fa fa-arrow-circle-up"></i>
+            </a>
         </footer>
     </main>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
