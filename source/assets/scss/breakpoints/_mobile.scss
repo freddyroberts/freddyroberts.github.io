@@ -1,0 +1,17 @@
+@include media($mobile) {
+  .hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 170px;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 250px;
+        background-color: rgba(92, 78, 72, 0.4);
+        z-index: 0;
+    }
+  }
+}

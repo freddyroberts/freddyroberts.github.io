@@ -1,6 +1,9 @@
 @import "../../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 // $visual-grid: true;
 @import "../../../bower_components/neat/app/assets/stylesheets/_neat.scss";
+@import "./_variables.scss";
 
 // Breakpoints
 @import "./breakpoints/_desktop.scss";
+@import "./breakpoints/_tablet.scss";
+@import "./breakpoints/_mobile.scss";

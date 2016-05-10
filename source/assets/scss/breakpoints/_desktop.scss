@@ -12,7 +12,6 @@ body {
 // HEADER ----------------------
 .header {
     @include span-columns(12);
-    $ipad: new-breakpoint(max-width 769px 4);
     top: 0;
     left: 0;
     position: fixed;
@@ -26,9 +25,6 @@ body {
         font-weight: lighter;
         color: #303C42;
         letter-spacing: 5px;
-        @include media($ipad) {
-             @include span-columns(12 of 12);
-        }
     }
     // PAGE NAV ---------------------
     .navigation {
@@ -38,12 +34,6 @@ body {
         font-weight: lighter;
         line-height: 42px;
         text-align: center;
-        @include media($ipad) {
-            display: none;
-        }
-        @include media($ipad) {
-            display: none;
-        }
         .nav-items {
             @include span-columns(1 of 6);
             list-style: none;
@@ -56,7 +46,6 @@ body {
 // MAIN ------------
 .hero {
     @include outer-container(12);
-    $mobile: new-breakpoint(max-width 500px 4);
     margin-top: 80px;
     background-image: url("../img/GamlaStan.jpg");
     background-size: cover;
@@ -73,51 +62,21 @@ body {
         background-color: rgba(92, 78, 72, 0.4);
         z-index: 0;
     }
-    @include media($mobile) {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 170px;
-        &:before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            content: "";
-            width: 100%;
-            height: 250px;
-            background-color: rgba(92, 78, 72, 0.4);
-            z-index: 0;
-        }
-    }
 }
 // CONTACT----------------------
 .contact {
     @include outer-container(12);
-    $ipad: new-breakpoint(max-width 769px 4);
     color: #303C42;
     text-align: center;
     .contact-img {
         @include span-columns(6 of 12);
-        @include media($ipad) {
-             @include span-columns(12 of 12);
-        }
     }
     .contact-content {
         @include span-columns(6 of 12);
         margin-top: 60px;
-        @include media($ipad) {
-             @include span-columns(12 of 12);
-            text-align: center;
-            margin-top: 0;
-        }
         .contact-info {
-          @include media($ipad) {
-              display: none;
-          }
           .contact-title {
               @include span-columns(6 of 6);
-              @include media($ipad) {
-                   @include span-columns(4 of 4);
-              }
           }
             .contact-items {
               margin-top: 10px;
@@ -134,15 +93,7 @@ body {
     }
 }
 .mobileContact {
-    @include outer-container(12);
-    @include pad();
-    $ipad: new-breakpoint(max-width 769px 4);
     display: none;
-    text-align: center;
-    color: #303C42;
-    @include media($ipad) {
-        display: inline;
-    }
     h2 {
         margin: 15px;
         font-size: 32px;
@@ -179,13 +130,9 @@ body {
 .social {
     @include outer-container(12);
     margin-top: 2em;
-    $ipad: new-breakpoint(max-width 769px 4);
     .insta {
         @include span-columns(12 of 12);
         text-align: center;
-        @include media($ipad) {
-            text-align: center;
-        }
         a {
             height: 0;
         }
@@ -204,16 +151,12 @@ body {
 .portfolio {
     @include outer-container(12 of 12);
     @include pad();
-    $ipad: new-breakpoint(max-width 769px 4);
     color: #303C42;
     text-align: center;
 
     .portfolio-title {
       @include span-columns(12 of 12);
       text-align: center;
-      @include media($ipad) {
-              display: none;
-      }
     }
     .portfolio-info {
         @include span-columns(12 of 12);
@@ -221,17 +164,11 @@ body {
         text-align: left;
         line-height: 24px;
         font-size: 14px;
-        @include media($ipad) {
-            display: none;
-        }
     }
     .projects {
         @include span-columns(12 of 12);
         text-align: center;
         margin-bottom: 20px;
-        @include media($ipad) {
-            display: none;
-        }
         .project-item {
             @include span-columns(6 of 12);
             margin: 0.5%;
@@ -247,11 +184,6 @@ body {
                 opacity: 0.5;
                 margin: 10px;
                 height: 300px;
-                @include media($ipad) {
-                     @include span-columns(12 of 12);
-                    height: 300px;
-                    margin: 0 0 8px;
-                }
                 &:hover {
                     opacity: 1;
                     transition: 0.6s;
@@ -274,7 +206,6 @@ body {
 // Footer
 .footer {
     @include outer-container(12);
-    $ipad: new-breakpoint(max-width 769px 4);
     @include pad();
     background-color: #303C42;
     text-align: center;
