@@ -239,7 +239,8 @@ body {
 .social {
   max-width: 12;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 2em; }
   .social::after {
     clear: both;
     content: "";

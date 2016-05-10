@@ -178,6 +178,7 @@ body {
 //  Social -------
 .social {
     @include outer-container(12);
+    margin-top: 2em;
     $ipad: new-breakpoint(max-width 769px 4);
     .insta {
         @include span-columns(12 of 12);
