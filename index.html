@@ -5,26 +5,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreddyRoberts.com</title>
+    <title>freddyroberts.com</title>
     <meta name="description" content="Freddy Roberts, an inspired motivated junior web developer!">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,300,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="public/assets/css/main.css">
 </head>
 
 <body>
     <header class="header">
-        <h1 class="title" role="heading">FREDDY ROBERTS</h1>
+        <h1 class="title" role="heading">Freddy Roberts</h1>
         <nav class="navigation" role="navigation">
             <ul>
                 <li class="nav-items"><a class="links" href="#about" id="aboutLnk">About</a></li>
-                <li class="nav-items"><a class="links" href="#social" id="socialLnk">Social</a></li>
-                <li class="nav-items"><a class="links" href="#portfolio" id="portfolioLnk">Portfolio</a></li>
+                <li class="nav-items"><a class="links" href="#skills" id="skillsLnk">Skills</a></li>
+                <li class="nav-items"><a class="links" href="#projects" id="projectsLnk">Projects</a></li>
                 <li class="nav-items"><a class="links" href="#contact" id="contactLnk">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main role="main">
-        <section id="top" class="hero"></section>
+        <section id="top" class="hero">
+          <h1 class="web">
+            Live in the web
+          </h1>
+        </section>
         <section class="contact" id="contact">
             <img class="contact-img" src="public/assets/img/freddyorville_footerbg.jpg" />
             <article class="contact-content">
@@ -59,14 +64,9 @@
                 I’m looking to continue my education by pursuing opportunities that will allow me to contribute to an organization as a Front End Developer.
             </p>
         </section>
-
-        <section class="social" id="social">
-            <section id="instafeed" class="insta"></section>
-        </section>
-
-        <section class="portfolio" id="portfolio">
-            <div class="portfolio-title">
-              <h2>Skills</h2>
+        <section id="skills" class="portfolio" id="portfolio">
+            <div>
+              <h2 class="portfolio-title">Skills</h2>
             </div>
                 <ul class="portfolio-info">
                     <li><b>HTML/CSS</b>: Sass, Bourbon/Neat, Bootstrap</li>
@@ -77,23 +77,23 @@
                     <li><b>Development Tools</b>: CommandLine/Terminal, Bower, NPM, Gulp, Browserify, BrowerSync, Homestead</li>
                 </ul>
 
-            <div class="projects">
+            <div id="projects" class="projects">
                 <h2 class="projects-title">Projects</h2>
                 <a class="project-item" href="http://taylorpreston.github.io/Outfit_Maker/#/">
                     <span>A Virtual Wardrobe</span>
-                    <div class="project-img drobe" src="public/assets/img/drobe.jpg"></div>
+                    <div class="project-img drobe"></div>
                 </a>
                 <a class="project-item" href="http://hinsonpoolcare.com">
                   <span>Hinson Pool Care</span>
-                  <div class="project-img hinsonpoolcare" src="public/assets/img/hinson-pool-care.jpg"></div>
+                  <div class="project-img hinsonpoolcare"></div>
                 </a>
                 <a class="project-item" href="http://freddyroberts.github.io/CaddisTest/">
                   <span>Caddis Test</span>
-                  <div class="project-img caddis" src="public/assets/img/caddis-test.jpg"></div>
+                  <div class="project-img caddis"></div>
                 </a>
                 <a class="project-item" href="http://hollymeyers.com">
                   <span>HollyMeyers.com</span>
-                  <div class="project-img hollymeyers" src="public/assets/img/hollymeyers.jpg"></div>
+                  <div class="project-img hollymeyers"></div>
                 </a>
             </div>
             <div>
@@ -108,9 +108,9 @@
           <i class="fa fa-arrow-circle-up"></i>
         </a>
     </footer>
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/instafeed.js/instafeed.min.js"></script>
-    <script type="text/javascript" src="source/js/main.js"></script>
+    <script src="bundle.js"></script>
 </body>
 
 </html>

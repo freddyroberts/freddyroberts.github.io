@@ -1,21 +1,20 @@
-function Instalimit() {
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    return 4;
-  } else {
-    return 16;
-  }
-};
-var userFeed = new Instafeed({
-  get: 'user',
-  userId: 6782497,
-  limit: Instalimit(),
-  accessToken: '6782497.1313689.73f45627cbc747af95d8f37b667b3e78'
-});
-// INSTAGRAM
-userFeed.run();
+// var vue = require('vue');
 
-// Twitter Script
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+// Vue.config.devtools = true
+// new Vue({
+//   el: '#app',
+//   data: {
+//     title: 'Freddy Roberts'
+//   }
+// })
+window.addEventListener("scroll", function(evt) {
+    var pos_top = $(window).scrollTop();
+     if(pos_top > 50){
+       $( ".header" ).fadeIn( "slow", function(){});
+   } else {
+      $( ".header" ).fadeOut( "fast", function(){});
+   }
+});
 
 $( "#bottom" ).on( "click", function( event ) {
   $("html, body").animate({
@@ -29,9 +28,14 @@ $( "#aboutLnk" ).on( "click", function( event ) {
   }, 850);
 });
 
-$( "#socialLnk" ).on( "click", function( event ) {
+$( "#skillsLnk" ).on( "click", function( event ) {
   $("html, body").animate({
-    scrollTop: $("#social").offset().top
+    scrollTop: $("#skills").offset().top
+  }, 850);
+});
+$( "#projectsLnk" ).on( "click", function( event ) {
+  $("html, body").animate({
+    scrollTop: $("#projects").offset().top
   }, 850);
 });
 
