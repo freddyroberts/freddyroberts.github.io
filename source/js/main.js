@@ -3,7 +3,7 @@ $(document).ready(function() {
     $(".background-color").animate({
         opacity: 0.75,
     }, 4400, function() {});
-    $('.scroll-down').addClass('animated fadeInUp');
+    $('.scroll-down').addClass('animated fadeInDown');
 });
 
 window.addEventListener("scroll", function(e) {
@@ -14,7 +14,7 @@ window.addEventListener("scroll", function(e) {
         $('.scroll-down').addClass('animated fadeOutDown');
     } else {
         $(".header").fadeOut("fast", function() {});
-        $('.scroll-down').addClass('animated fadeIn');
+        $('.scroll-down').removeClass('animated fadeOutDown').addClass('animated fadeInDown');
     }
 });
 
@@ -29,7 +29,6 @@ $(".scroll-down").on("click", function(e) {
     $("html, body").animate({
         scrollTop: $("#contact").offset().top
     }, 1480);
-    $('.scroll-down').addClass('animated fadeOutUp');
 });
 
 $("#aboutLnk").on("click", function(e) {
