@@ -248,7 +248,9 @@ body {
       margin: 0.5%;
       text-align: center;
       text-decoration: none;
-      color: #303C42; }
+      color: #303C42;
+      transition: width 0.8s linear;
+      /* BYO prefixes */ }
       .portfolio .projects .project-item:last-child {
         margin-right: 0; }
       .portfolio .projects .project-item:hover {
@@ -269,6 +271,9 @@ body {
         .portfolio .projects .project-item .project-img:hover {
           opacity: 1;
           transition: 0.6s; }
+      @media (max-width: 550px) {
+        .portfolio .projects .project-item {
+          width: 100%; } }
       .portfolio .projects .project-item .drobe {
         background-image: url("../img/drobe.jpg"); }
       .portfolio .projects .project-item .hinsonpoolcare {
