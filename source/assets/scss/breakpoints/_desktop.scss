@@ -45,7 +45,7 @@ body {
         line-height: 42px;
         text-align: center;
         .nav-items {
-            @include span-columns(1 of 6);
+            @include span-columns(1.2 of 6);
             list-style: none;
             &:hover {
                 text-decoration: underline;
@@ -58,7 +58,7 @@ body {
     @include outer-container(12);
     position: relative;
     height: 100vh;
-  .background-color {
+    .background-color {
         position: absolute;
         top: 0;
         left: 0;
@@ -72,15 +72,15 @@ body {
         @include span-columns(12 of 12);
         position: absolute;
         text-align: center;
+        top: 20%;
         color: #fff;
         opacity: 0.8;
         font-weight: 100;
-        line-height: 155px;
         font-size: 62px;
         text-transform: uppercase;
     }
     .scroll-container {
-      @include span-columns(12 of 12);
+        @include span-columns(12 of 12);
         bottom: 0;
         height: 6.5em;
         letter-spacing: 0.225em;
@@ -91,17 +91,17 @@ body {
         z-index: 1;
         opacity: 0.8;
         .scroll-down {
-          @include span-columns(4 of 12);
-          @include shift(4);
-          text-decoration: none;
-          font-size: 1em;
-          color: #fff;
-          &:hover {
-            color: #000000;
-          }
+            @include span-columns(4 of 12);
+            @include shift(4);
+            text-decoration: none;
+            font-size: 1em;
+            color: #fff;
+            &:hover {
+                color: #000000;
+            }
         }
         .fa {
-          @include span-columns(4 of 4);
+            @include span-columns(4 of 4);
             font-size: 1.5em;
         }
     }
@@ -109,46 +109,24 @@ body {
 // CONTACT----------------------
 .contact {
     @include outer-container(12);
+    @include pad();
     background-color: #fff;
     color: #303C42;
     text-align: center;
-    .contact-img {
-        @include span-columns(6 of 12);
+    .contact-info {
+        padding: 0;
     }
     .contact-content {
-        @include span-columns(6 of 12);
-        margin-top: 62px;
-        .contact-info {
-            .contact-title {
-                @include span-columns(6 of 6);
-            }
-            .contact-items {
-                margin-top: 10px;
-                list-style: none;
-                letter-spacing: 5px;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-            .contact-icons {
-                margin-right: 5px;
-            }
+        @include span-columns(12 of 12);
+        .contact-title {
+            font-size: 1.6em;
+            font-weight: 300;
         }
-    }
-}
-.mobileContact {
-    display: none;
-    h2 {
-        margin: 15px;
-        font-size: 32px;
-    }
-    ul {
-        padding-left: 0;
-        font-size: 38px;
-        list-style: none;
-    }
-    li {
-        @include span-columns(4 of 12);
+        .contact-items {
+            list-style: none;
+            font-size: 1.3em;
+            font-weight: 200;
+        }
     }
 }
 //  ABOUT ---------------------
@@ -249,27 +227,40 @@ body {
 .footer {
     @include outer-container(12);
     @include pad();
-    height: 25vh;
     background-color: #303C42;
-    letter-spacing: 0.225em;
     text-align: center;
-    text-transform: uppercase;
     z-index: 1;
-
-    &:focus {
-        transition: 0.5s;
+    color: #fff;
+    .copyright {
+        @include span-columns(4 of 12);
+        text-align: left;
+        letter-spacing: 0.1em;
+        opacity: 0.5;
     }
-    .back-to-top {
+    .scroll-up-container {
+        @include span-columns(4 of 12);
+        text-align: center;
+    }
+    .scroll-up {
+        text-transform: uppercase;
         text-decoration: none;
+        letter-spacing: 0.225em;
         color: #fff;
+        &:hover {
+            opacity: 0.4;
+        }
     }
-
     .social {
-      .fa {
-        padding: 10px;
-        font-size: 1.3em;
-        text-decoration: none;
-        color: #fff;
-      }
+        @include span-columns(4 of 12);
+        text-align: right;
+        .fa {
+            padding-left: 12px;
+            font-size: 1.3em;
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                opacity: 0.4;
+            }
+        }
     }
 }

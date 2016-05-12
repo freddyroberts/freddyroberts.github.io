@@ -2,8 +2,8 @@ $(document).ready(function() {
     $('.web').addClass('animated fadeInDown');
     $(".background-color").animate({
         opacity: 0.75,
-    }, 3000, function() {});
-    $('.scroll-down').addClass('animated fadeIn');
+    }, 4400, function() {});
+    $('.scroll-down').addClass('animated fadeInUp');
 });
 
 window.addEventListener("scroll", function(e) {
@@ -11,8 +11,10 @@ window.addEventListener("scroll", function(e) {
     var pos_top = $(window).scrollTop();
     if (pos_top >= 400) {
         $(".header").fadeIn("slow", function() {});
+        $('.scroll-down').addClass('animated fadeOutDown');
     } else {
         $(".header").fadeOut("fast", function() {});
+        $('.scroll-down').addClass('animated fadeIn');
     }
 });
 
@@ -27,7 +29,7 @@ $(".scroll-down").on("click", function(e) {
     $("html, body").animate({
         scrollTop: $("#contact").offset().top
     }, 1480);
-    $('.scroll-down').addClass('animated fadeOut');
+    $('.scroll-down').addClass('animated fadeOutUp');
 });
 
 $("#aboutLnk").on("click", function(e) {

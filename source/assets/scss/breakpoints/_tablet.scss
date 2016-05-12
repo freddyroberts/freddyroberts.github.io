@@ -7,6 +7,12 @@
             display: none;
         }
     }
+    .hero {
+        .web {
+            font-size: 42px;
+            padding: 22px;
+        }
+    }
     .contact {
         .contact-img {
             @include span-columns(12 of 12);
@@ -14,21 +20,10 @@
         .contact-content {
             @include span-columns(12 of 12);
             text-align: center;
-            margin-top: 0;
-            .contact-info {
-                display: none;
-            }
             .contact-title {
                 @include span-columns(4 of 4);
             }
         }
-    }
-    .mobileContact {
-        @include outer-container(12);
-        @include pad();
-        text-align: center;
-        color: #303C42;
-        display: inline;
     }
     .portfolio {
         .portfolio-title {
@@ -44,6 +39,21 @@
                 height: 300px;
                 margin: 0 0 8px;
             }
+        }
+    }
+    .footer {
+        .copyright {
+            @include span-columns(12 of 12);
+            text-align: center;
+        }
+        .scroll-up-container {
+            @include span-columns(12 of 12) text-align: center;
+            padding-top: 10px;
+        }
+        .social {
+            @include span-columns(12 of 12);
+            display: none;
+            text-align: center;
         }
     }
 }
