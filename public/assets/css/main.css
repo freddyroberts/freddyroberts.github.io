@@ -1,3 +1,4 @@
+@import url(./animate.css);
 html {
   box-sizing: border-box; }
 
@@ -5,7 +6,16 @@ html {
   box-sizing: inherit; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Raleway', sans-serif; }
+
+.page-wrapper {
+  background-image: url("../img/web.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0; }
 
 .links {
   text-decoration: none;
@@ -18,6 +28,8 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: none;
   top: 0;
   left: 0;
   position: fixed;
@@ -33,7 +45,7 @@ body {
     width: 48.82117%;
     text-align: center;
     font-size: 32px;
-    font-weight: lighter;
+    font-weight: 200;
     color: #303C42;
     letter-spacing: 5px; }
     .header .title:last-child {
@@ -45,7 +57,7 @@ body {
     width: 48.82117%;
     color: #303C42;
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: 200;
     line-height: 42px;
     text-align: center; }
     .header .navigation:last-child {
@@ -54,7 +66,7 @@ body {
       float: left;
       display: block;
       margin-right: 4.82916%;
-      width: 12.64237%;
+      width: 16.13667%;
       list-style: none; }
       .header .navigation .nav-items:last-child {
         margin-right: 0; }
@@ -65,83 +77,102 @@ body {
   max-width: 12;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
-  background-image: url("../img/GamlaStan.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 425px;
-  text-align: center; }
+  position: relative;
+  height: 100vh; }
   .hero::after {
     clear: both;
     content: "";
     display: table; }
-  .hero:before {
+  .hero .background-color {
     position: absolute;
     top: 0;
     left: 0;
     content: "";
     width: 100%;
-    height: 505px;
-    background-color: rgba(92, 78, 72, 0.4);
+    height: 100%;
+    background-color: #303c42;
     z-index: 0; }
+  .hero .web {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 100;
+    font-size: 62px;
+    text-transform: uppercase; }
+    .hero .web:last-child {
+      margin-right: 0; }
+  .hero .scroll-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    bottom: 0;
+    height: 6.5em;
+    letter-spacing: 0.225em;
+    outline: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    opacity: 0.8; }
+    .hero .scroll-container:last-child {
+      margin-right: 0; }
+    .hero .scroll-container .scroll-down {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 34.11922%;
+      text-decoration: none;
+      font-size: 1em;
+      color: #fff; }
+      .hero .scroll-container .scroll-down:last-child {
+        margin-right: 0; }
+      .hero .scroll-container .scroll-down:hover {
+        color: #000000; }
+    .hero .scroll-container .fa {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      font-size: 1.5em; }
+      .hero .scroll-container .fa:last-child {
+        margin-right: 0; }
 
 .contact {
   max-width: 12;
   margin-left: auto;
   margin-right: auto;
+  padding: 2.35765%;
+  background-color: #fff;
   color: #303C42;
   text-align: center; }
   .contact::after {
     clear: both;
     content: "";
     display: table; }
-  .contact .contact-img {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .contact .contact-img:last-child {
-      margin-right: 0; }
+  .contact .contact-info {
+    padding: 0; }
   .contact .contact-content {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-top: 60px; }
+    width: 100%; }
     .contact .contact-content:last-child {
       margin-right: 0; }
-    .contact .contact-content .contact-info .contact-title {
-      float: left;
-      display: block;
-      margin-right: 4.82916%;
-      width: 100%; }
-      .contact .contact-content .contact-info .contact-title:last-child {
-        margin-right: 0; }
-    .contact .contact-content .contact-info .contact-items {
-      margin-top: 10px;
+    .contact .contact-content .contact-title {
+      font-size: 1.6em;
+      font-weight: 300; }
+    .contact .contact-content .contact-items {
       list-style: none;
-      letter-spacing: 5px; }
-      .contact .contact-content .contact-info .contact-items:hover {
-        text-decoration: underline; }
-    .contact .contact-content .contact-info .contact-icons {
-      margin-right: 5px; }
-
-.mobileContact {
-  display: none; }
-  .mobileContact h2 {
-    margin: 15px;
-    font-size: 32px; }
-  .mobileContact ul {
-    padding-left: 0;
-    font-size: 38px;
-    list-style: none; }
-  .mobileContact li {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .mobileContact li:last-child {
-      margin-right: 0; }
+      font-size: 1.3em;
+      font-weight: 200; }
 
 .about {
   max-width: 12;
@@ -160,37 +191,11 @@ body {
     color: #fff;
     line-height: 40px;
     font-style: normal;
-    font-weight: lighter;
+    font-weight: 200;
     font-size: 24px;
     margin: 0 0 0 10px;
     letter-spacing: 6px;
     padding: 10px; }
-
-.social {
-  max-width: 12;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em; }
-  .social::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .social .insta {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    text-align: center; }
-    .social .insta:last-child {
-      margin-right: 0; }
-    .social .insta a {
-      height: 0; }
-    .social .insta img {
-      margin-right: 5px;
-      opacity: 0.5; }
-      .social .insta img:hover {
-        opacity: 1;
-        transition: 0.6s; }
 
 .portfolio {
   max-width: 12 of 12;
@@ -198,7 +203,8 @@ body {
   margin-right: auto;
   padding: 2.35765%;
   color: #303C42;
-  text-align: center; }
+  text-align: center;
+  background-color: #fff; }
   .portfolio::after {
     clear: both;
     content: "";
@@ -208,7 +214,8 @@ body {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    font-weight: 300; }
     .portfolio .portfolio-title:last-child {
       margin-right: 0; }
   .portfolio .portfolio-info {
@@ -231,6 +238,8 @@ body {
     margin-bottom: 20px; }
     .portfolio .projects:last-child {
       margin-right: 0; }
+    .portfolio .projects .projects-title {
+      font-weight: 300; }
     .portfolio .projects .project-item {
       float: left;
       display: block;
@@ -285,18 +294,53 @@ body {
   margin-right: auto;
   padding: 2.35765%;
   background-color: #303C42;
-  text-align: center; }
+  text-align: center;
+  z-index: 1;
+  color: #fff; }
   .footer::after {
     clear: both;
     content: "";
     display: table; }
-  .footer:focus {
-    transition: 0.5s; }
-  .footer .back-to-top {
+  .footer .copyright {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    text-align: left;
+    letter-spacing: 0.1em;
+    opacity: 0.5; }
+    .footer .copyright:last-child {
+      margin-right: 0; }
+  .footer .scroll-up-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    text-align: center; }
+    .footer .scroll-up-container:last-child {
+      margin-right: 0; }
+  .footer .scroll-up {
+    text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 0.225em;
     color: #fff; }
-    .footer .back-to-top:hover {
-      text-decoration: underline; }
+    .footer .scroll-up:hover {
+      opacity: 0.4; }
+  .footer .social {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    text-align: right; }
+    .footer .social:last-child {
+      margin-right: 0; }
+    .footer .social .fa {
+      padding-left: 12px;
+      font-size: 1.3em;
+      text-decoration: none;
+      color: #fff; }
+      .footer .social .fa:hover {
+        opacity: 0.4; }
 
 @media screen and (max-width: 769px) {
   .header .title {
@@ -308,6 +352,9 @@ body {
       margin-right: 0; }
   .header .navigation {
     display: none; }
+  .hero .web {
+    font-size: 42px;
+    padding: 22px; }
   .contact .contact-img {
     float: left;
     display: block;
@@ -320,12 +367,9 @@ body {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    text-align: center;
-    margin-top: 0; }
+    text-align: center; }
     .contact .contact-content:last-child {
       margin-right: 0; }
-    .contact .contact-content .contact-info {
-      display: none; }
     .contact .contact-content .contact-title {
       float: left;
       display: block;
@@ -333,18 +377,6 @@ body {
       width: 100%; }
       .contact .contact-content .contact-title:last-child {
         margin-right: 0; }
-  .mobileContact {
-    max-width: 12;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2.35765%;
-    text-align: center;
-    color: #303C42;
-    display: inline; }
-    .mobileContact::after {
-      clear: both;
-      content: "";
-      display: table; }
   .portfolio .portfolio-title {
     display: none; }
   .portfolio .portfolio-info {
@@ -359,19 +391,30 @@ body {
       height: 300px;
       margin: 0 0 8px; }
       .portfolio .projects .project-img:last-child {
-        margin-right: 0; } }
-
-@media screen and (max-width: 500px) {
-  .hero {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 170px; }
-    .hero:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: "";
-      width: 100%;
-      height: 250px;
-      background-color: rgba(92, 78, 72, 0.4);
-      z-index: 0; } }
+        margin-right: 0; }
+  .footer .copyright {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: center; }
+    .footer .copyright:last-child {
+      margin-right: 0; }
+  .footer .scroll-up-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px; }
+    .footer .scroll-up-container:last-child {
+      margin-right: 0; }
+  .footer .social {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    display: none;
+    text-align: center; }
+    .footer .social:last-child {
+      margin-right: 0; } }

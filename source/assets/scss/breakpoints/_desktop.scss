@@ -1,17 +1,27 @@
 body {
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
-
+.page-wrapper {
+    background-image: url("../img/web.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0;
+}
 .links {
-  text-decoration: none;
-  color: #303C42;
-  &:hover {
-      text-decoration: underline;
-  }
+    text-decoration: none;
+    color: #303C42;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 // HEADER ----------------------
 .header {
     @include span-columns(12);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: none;
     top: 0;
     left: 0;
     position: fixed;
@@ -22,7 +32,7 @@ body {
         @include span-columns(6 of 12);
         text-align: center;
         font-size: 32px;
-        font-weight: lighter;
+        font-weight: 200;
         color: #303C42;
         letter-spacing: 5px;
     }
@@ -31,11 +41,11 @@ body {
         @include span-columns(6 of 12);
         color: #303C42;
         font-size: 16px;
-        font-weight: lighter;
+        font-weight: 200;
         line-height: 42px;
         text-align: center;
         .nav-items {
-            @include span-columns(1 of 6);
+            @include span-columns(1.2 of 6);
             list-style: none;
             &:hover {
                 text-decoration: underline;
@@ -46,65 +56,77 @@ body {
 // MAIN ------------
 .hero {
     @include outer-container(12);
-    margin-top: 80px;
-    background-image: url("../img/GamlaStan.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 425px;
-    text-align: center;
-    &:before {
+    position: relative;
+    height: 100vh;
+    .background-color {
         position: absolute;
         top: 0;
         left: 0;
         content: "";
         width: 100%;
-        height: 505px;
-        background-color: rgba(92, 78, 72, 0.4);
+        height: 100%;
+        background-color: rgba(48, 60, 66, 1);
         z-index: 0;
+    }
+    .web {
+        @include span-columns(12 of 12);
+        position: absolute;
+        text-align: center;
+        top: 20%;
+        color: #fff;
+        opacity: 0.8;
+        font-weight: 100;
+        font-size: 62px;
+        text-transform: uppercase;
+    }
+    .scroll-container {
+        @include span-columns(12 of 12);
+        bottom: 0;
+        height: 6.5em;
+        letter-spacing: 0.225em;
+        outline: 0;
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 1;
+        opacity: 0.8;
+        .scroll-down {
+            @include span-columns(4 of 12);
+            @include shift(4);
+            text-decoration: none;
+            font-size: 1em;
+            color: #fff;
+            &:hover {
+                color: #000000;
+            }
+        }
+        .fa {
+            @include span-columns(4 of 4);
+            font-size: 1.5em;
+        }
     }
 }
 // CONTACT----------------------
 .contact {
     @include outer-container(12);
+    @include pad();
+    background-color: #fff;
     color: #303C42;
     text-align: center;
-    .contact-img {
-        @include span-columns(6 of 12);
+    .contact-info {
+        padding: 0;
     }
     .contact-content {
-        @include span-columns(6 of 12);
-        margin-top: 60px;
-        .contact-info {
-          .contact-title {
-              @include span-columns(6 of 6);
-          }
-            .contact-items {
-              margin-top: 10px;
-              list-style: none;
-              letter-spacing: 5px;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-            .contact-icons {
-                margin-right: 5px;
-            }
+        @include span-columns(12 of 12);
+        .contact-title {
+            font-size: 1.6em;
+            font-weight: 300;
         }
-    }
-}
-.mobileContact {
-    display: none;
-    h2 {
-        margin: 15px;
-        font-size: 32px;
-    }
-    ul {
-        padding-left: 0;
-        font-size: 38px;
-        list-style: none;
-    }
-    li {
-        @include span-columns(4 of 12);
+        .contact-items {
+            list-style: none;
+            font-size: 1.3em;
+            font-weight: 200;
+        }
     }
 }
 //  ABOUT ---------------------
@@ -119,44 +141,24 @@ body {
         color: #fff;
         line-height: 40px;
         font-style: normal;
-        font-weight: lighter;
+        font-weight: 200;
         font-size: 24px;
         margin: 0 0 0 10px;
         letter-spacing: 6px;
         padding: 10px;
     }
 }
-//  Social -------
-.social {
-    @include outer-container(12);
-    margin-top: 2em;
-    .insta {
-        @include span-columns(12 of 12);
-        text-align: center;
-        a {
-            height: 0;
-        }
-        img {
-            margin-right: 5px;
-            opacity: 0.5;
-            &:hover {
-                opacity: 1;
-                transition: 0.6s;
-            }
-        }
-    }
-}
-
 // Skills
 .portfolio {
     @include outer-container(12 of 12);
     @include pad();
     color: #303C42;
     text-align: center;
-
+    background-color: #fff;
     .portfolio-title {
-      @include span-columns(12 of 12);
-      text-align: center;
+        @include span-columns(12 of 12);
+        text-align: center;
+        font-weight: 300;
     }
     .portfolio-info {
         @include span-columns(12 of 12);
@@ -169,15 +171,18 @@ body {
         @include span-columns(12 of 12);
         text-align: center;
         margin-bottom: 20px;
+        .projects-title {
+            font-weight: 300;
+        }
         .project-item {
             @include span-columns(6 of 12);
             margin: 0.5%;
             text-align: center;
             text-decoration: none;
             color: #303C42;
-                &:hover {
-                    text-decoration: underline;
-                }
+            &:hover {
+                text-decoration: underline;
+            }
             .project-img {
                 @include span-columns(6 of 6);
                 border: 1px solid #303C42;
@@ -193,16 +198,16 @@ body {
                 }
             }
             .drobe {
-              background-image: url("../img/drobe.jpg");
+                background-image: url("../img/drobe.jpg");
             }
             .hinsonpoolcare {
-              background-image: url("../img/hinson-pool-care.jpg");
+                background-image: url("../img/hinson-pool-care.jpg");
             }
             .caddis {
-              background-image: url("../img/caddis-test.jpg");
+                background-image: url("../img/caddis-test.jpg");
             }
             .hollymeyers {
-              background-image: url("../img/hollymeyers.jpg");
+                background-image: url("../img/hollymeyers.jpg");
             }
         }
     }
@@ -215,7 +220,7 @@ body {
         text-decoration: underline;
     }
     .fa {
-      margin-right: 0.5em;
+        margin-right: 0.5em;
     }
 }
 // Footer
@@ -224,14 +229,38 @@ body {
     @include pad();
     background-color: #303C42;
     text-align: center;
-    &:focus {
-        transition: 0.5s;
+    z-index: 1;
+    color: #fff;
+    .copyright {
+        @include span-columns(4 of 12);
+        text-align: left;
+        letter-spacing: 0.1em;
+        opacity: 0.5;
     }
-    .back-to-top {
-      text-decoration: none;
+    .scroll-up-container {
+        @include span-columns(4 of 12);
+        text-align: center;
+    }
+    .scroll-up {
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.225em;
         color: #fff;
         &:hover {
-          text-decoration: underline;
+            opacity: 0.4;
+        }
+    }
+    .social {
+        @include span-columns(4 of 12);
+        text-align: right;
+        .fa {
+            padding-left: 12px;
+            font-size: 1.3em;
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                opacity: 0.4;
+            }
         }
     }
 }
