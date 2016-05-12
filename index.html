@@ -9,10 +9,12 @@
     <meta name="description" content="Freddy Roberts, an inspired motivated junior web developer!">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,300,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <!-- <link rel="stylesheet" href="public/assets/css/animate.css"> -->
     <link rel="stylesheet" href="public/assets/css/main.css">
 </head>
 
 <body>
+  <div class="page-wrapper">
     <header class="header">
         <h1 class="title" role="heading">Freddy Roberts</h1>
         <nav class="navigation" role="navigation">
@@ -26,9 +28,15 @@
     </header>
     <main role="main">
         <section id="top" class="hero">
+          <div class="background-color">
           <h1 class="web">
-            Live in the web
+            Welcome
           </h1>
+          <a href="#contact" class="scroll-down">
+            There's More
+            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+          </a>
+          </div>
         </section>
         <section class="contact" id="contact">
             <img class="contact-img" src="public/assets/img/freddyorville_footerbg.jpg" />
@@ -108,7 +116,7 @@
           <i class="fa fa-arrow-circle-up"></i>
         </a>
     </footer>
-
+</div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bundle.js"></script>
 </body>
