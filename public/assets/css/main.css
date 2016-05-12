@@ -260,7 +260,6 @@ body {
         width: 100%;
         border: 1px solid #303C42;
         opacity: 0.5;
-        margin: 10px;
         height: 300px;
         background-size: cover;
         background-position: center;
@@ -377,21 +376,31 @@ body {
       width: 100%; }
       .contact .contact-content .contact-title:last-child {
         margin-right: 0; }
-  .portfolio .portfolio-title {
-    display: none; }
-  .portfolio .portfolio-info {
-    display: none; }
-  .portfolio .projects {
-    display: none; }
-    .portfolio .projects .project-img {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      height: 300px;
-      margin: 0 0 8px; }
-      .portfolio .projects .project-img:last-child {
-        margin-right: 0; }
+  .portfolio {
+    padding: 0; }
+    .portfolio .portfolio-title {
+      display: none; }
+    .portfolio .portfolio-info {
+      display: none; }
+    .portfolio .projects {
+      display: block; }
+      .portfolio .projects .project-item {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
+        .portfolio .projects .project-item:last-child {
+          margin-right: 0; }
+      .portfolio .projects .project-img {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 100%;
+        height: 300px;
+        margin: 0 0 8px; }
+        .portfolio .projects .project-img:last-child {
+          margin-right: 0; }
   .footer .copyright {
     float: left;
     display: block;
