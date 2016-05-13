@@ -21,7 +21,8 @@ body {
   text-decoration: none;
   color: #303C42; }
   .links:hover {
-    text-decoration: underline; }
+    opacity: 0.4;
+    transition: 0.4s; }
 
 .header {
   float: left;
@@ -70,8 +71,6 @@ body {
       list-style: none; }
       .header .navigation .nav-items:last-child {
         margin-right: 0; }
-      .header .navigation .nav-items:hover {
-        text-decoration: underline; }
 
 .hero {
   max-width: 12;
@@ -249,18 +248,19 @@ body {
       text-align: center;
       text-decoration: none;
       color: #303C42;
-      transition: width 0.8s linear;
-      /* BYO prefixes */ }
+      transition: width 0.8s linear; }
       .portfolio .projects .project-item:last-child {
         margin-right: 0; }
       .portfolio .projects .project-item:hover {
-        text-decoration: underline; }
+        opacity: 0.4;
+        transition: 0.4s; }
       .portfolio .projects .project-item .project-img {
         float: left;
         display: block;
         margin-right: 4.82916%;
         width: 100%;
         border: 1px solid #303C42;
+        border-radius: 3px;
         opacity: 0.5;
         height: 300px;
         background-size: cover;
@@ -271,9 +271,6 @@ body {
         .portfolio .projects .project-item .project-img:hover {
           opacity: 1;
           transition: 0.6s; }
-      @media (max-width: 550px) {
-        .portfolio .projects .project-item {
-          width: 100%; } }
       .portfolio .projects .project-item .drobe {
         background-image: url("../img/drobe.jpg"); }
       .portfolio .projects .project-item .hinsonpoolcare {
@@ -288,7 +285,8 @@ body {
   text-decoration: none;
   color: #303C42; }
   .portfolio-links:hover {
-    text-decoration: underline; }
+    transition: 0.4s;
+    opacity: 0.4; }
   .portfolio-links .fa {
     margin-right: 0.5em; }
 
@@ -329,7 +327,8 @@ body {
     letter-spacing: 0.225em;
     color: #fff; }
     .footer .scroll-up:hover {
-      opacity: 0.4; }
+      opacity: 0.4;
+      transition: 0.4s; }
   .footer .social {
     float: left;
     display: block;
@@ -344,7 +343,8 @@ body {
       text-decoration: none;
       color: #fff; }
       .footer .social .fa:hover {
-        opacity: 0.4; }
+        opacity: 0.4;
+        transition: 0.4s; }
 
 @media screen and (max-width: 769px) {
   .header .title {
@@ -387,25 +387,23 @@ body {
       display: none; }
     .portfolio .portfolio-info {
       display: none; }
-    .portfolio .projects {
-      display: block; }
-      .portfolio .projects .project-item {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 82.94039%;
-        margin-left: 8.5298%; }
-        .portfolio .projects .project-item:last-child {
-          margin-right: 0; }
-      .portfolio .projects .project-img {
-        float: left;
-        display: block;
-        margin-right: 2.84259%;
-        width: 100%;
-        height: 300px;
-        margin: 0 0 8px; }
-        .portfolio .projects .project-img:last-child {
-          margin-right: 0; }
+    .portfolio .projects .project-item {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .portfolio .projects .project-item:last-child {
+        margin-right: 0; }
+    .portfolio .projects .project-img {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 100%;
+      height: 300px;
+      margin: 0 0 8px; }
+      .portfolio .projects .project-img:last-child {
+        margin-right: 0; }
   .footer .copyright {
     float: left;
     display: block;
