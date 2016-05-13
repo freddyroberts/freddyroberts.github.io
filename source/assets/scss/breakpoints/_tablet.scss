@@ -34,7 +34,6 @@
             display: none;
         }
         .projects {
-            display: block;
             .project-item {
               @include span-columns(10 of 12);
               @include shift(1);
