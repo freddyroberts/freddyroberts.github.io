@@ -118,6 +118,7 @@ body {
     .contact-content {
         @include span-columns(12 of 12);
         .contact-title {
+          text-transform: capitalize;
             font-size: 1.6em;
             font-weight: 300;
         }
