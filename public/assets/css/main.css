@@ -166,6 +166,7 @@ body {
     .contact .contact-content:last-child {
       margin-right: 0; }
     .contact .contact-content .contact-title {
+      text-transform: capitalize;
       font-size: 1.6em;
       font-weight: 300; }
     .contact .contact-content .contact-items {
