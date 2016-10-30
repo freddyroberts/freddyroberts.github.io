@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
-
 .page-wrapper {
     background-image: url("../img/web.jpg");
     background-attachment: fixed;
@@ -143,9 +142,16 @@ body {
         font-style: normal;
         font-weight: 200;
         font-size: 24px;
-        margin: 0 0 0 10px;
-        letter-spacing: 6px;
+        margin: 0 auto;
+        max-width: 880px;
         padding: 10px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        opacity: 0.6;
+      }
     }
 }
 // Skills
