@@ -2,6 +2,9 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
+a:hover {
+    opacity: 0.5;
+}
 .page-wrapper {
     background-image: url("../img/web.jpg");
     background-attachment: fixed;
@@ -150,7 +153,7 @@ body {
       color: #fff;
       text-decoration: none;
       &:hover {
-        opacity: 0.6;
+        opacity: 0.5;
       }
     }
 }
@@ -161,6 +164,7 @@ body {
     color: #303C42;
     text-align: center;
     background-color: #fff;
+    max-width: 980px;
     .portfolio-title {
         @include span-columns(12 of 12);
         text-align: center;
@@ -241,18 +245,21 @@ body {
         }
     }
 }
+
 .portfolio-links {
-    margin: 1%;
-    text-decoration: none;
-    color: #303C42;
-    &:hover {
-      transition: 0.4s;
-      opacity: 0.4;
-    }
-    .fa {
-        margin-right: 0.5em;
-    }
+  @include span-columns(12 of 12);
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
+.portfolio-links a {
+  color: #303C42;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.portfolio-links .fa {
+  padding-right: 0.5rem;
+}
+
 // Footer
 .footer {
     @include outer-container(12);

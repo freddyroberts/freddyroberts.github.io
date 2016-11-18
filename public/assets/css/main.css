@@ -9,6 +9,9 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif; }
 
+a:hover {
+  opacity: 0.5; }
+
 .page-wrapper {
   background-image: url("../img/web.jpg");
   background-attachment: fixed;
@@ -200,7 +203,7 @@ body {
     color: #fff;
     text-decoration: none; }
     .about a:hover {
-      opacity: 0.6; }
+      opacity: 0.5; }
 
 .portfolio {
   max-width: 12 of 12;
@@ -209,7 +212,8 @@ body {
   padding: 2.35765%;
   color: #303C42;
   text-align: center;
-  background-color: #fff; }
+  background-color: #fff;
+  max-width: 980px; }
   .portfolio::after {
     clear: both;
     content: "";
@@ -303,14 +307,22 @@ body {
         background-image: url("../img/hollymeyers.jpg"); }
 
 .portfolio-links {
-  margin: 1%;
-  text-decoration: none;
-  color: #303C42; }
-  .portfolio-links:hover {
-    transition: 0.4s;
-    opacity: 0.4; }
-  .portfolio-links .fa {
-    margin-right: 0.5em; }
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem; }
+  .portfolio-links:last-child {
+    margin-right: 0; }
+
+.portfolio-links a {
+  color: #303C42;
+  font-size: 1.5rem;
+  padding: 1rem; }
+
+.portfolio-links .fa {
+  padding-right: 0.5rem; }
 
 .footer {
   max-width: 12;
