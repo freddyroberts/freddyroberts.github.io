@@ -12,14 +12,6 @@ body {
 a:hover {
   opacity: 0.5; }
 
-.page-wrapper {
-  background-image: url("../img/web.jpg");
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0; }
-
 .links {
   text-decoration: none;
   color: #303C42; }
@@ -79,6 +71,12 @@ a:hover {
   max-width: 12;
   margin-left: auto;
   margin-right: auto;
+  background-image: url("../img/web.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
   position: relative;
   height: 100vh; }
   .hero::after {
